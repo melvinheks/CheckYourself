@@ -1,7 +1,22 @@
-<?php
-
-
-
-
-?>
-<html></html>
+<html>
+    <head>
+        <title>NaWars</title>
+        <script src = "cilent/getMsgs.js"></script>
+        <script src = "cilent/sendMsgs.js"></script>
+    </head>
+    <body>
+        <div id="msgs">
+            <!---
+                This where all the msgs will be displayed
+            -->
+        </div>
+        <div id="input">
+            <input type='text' name='msg' id ='input'/>
+            <button id ='submitBtn' onclick='sendMsgs()'>Send<button/>
+        </div>
+        <script>
+            getLocation();
+            getMsgs();
+        </script>
+    </body>
+</html>
