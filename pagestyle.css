@@ -1,0 +1,12 @@
+#title{
+	border:3px solid black;
+	text-align:center;
+}
+#msgs{
+	border:3px solid black;
+	margin-left:10%;
+	margin-top:10%;
+	width:60%;
+	height:50%;
+	word-wrap:break-word;	
+}
