@@ -1,6 +1,6 @@
 <?php
 echo "hello world";
-	$dbhost = 'ip-172-31-18-79';
+	$dbhost = 'nawars.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
 	$dbport = '3306';
 	$dbname = 'nawars';
 	$charset = 'utf8' ;
@@ -15,7 +15,7 @@ echo "hello world";
 	echo $username;
 	echo $password;
 
-		try{
+        try{
 			$pdo = new PDO($dsn, $username, $password);
 			die(json_encode(array('outcome' => true)));
         }catch(PDOException $ex){
