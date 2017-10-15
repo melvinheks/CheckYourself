@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+        <script src = "cilent/getMsgs.js"></script>
         <script src = "cilent/sendMsgs.js"></script>
 	<script src = "cilent/textbox.js"></script>
-	<script type = "text/javascript" src = "texto.json"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Check Yourself Out</title>
+    <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="pagestyle.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,16 +20,23 @@
     <![endif]-->
   </head>
   <body>
-		<div class = "numbotron" id = "title">
-                Check Yourself Out
+ 
+<div class = "cover-heading" id = "title">
+                Neighborhood Chat
         </div>
-        <div id="msgs" style = "overflow-y: auto;">
-			<div class="botelem">Please enter your symptoms and I'll try to tell you your illness.</div>
+        <div id="msgs" style = "overflow:scroll;height:400px">
+            <!---
+                This where all the msgs will be displayed
+            -->
         </div>
-        <div class = "bontainer" id="inpu">
-            <input class = "bone-control" type='text' name='msg' id ='input' />
+        <div class = "container" id="inpu">
+            <input class = "form-control" type='text' name='msg' id ='input'/>
             <button class = "btn btn-lg btn-primary pull-right" id ='submitBtn' onclick='sendMsgs()'>Send</button>
         </div>
+        <script>
+            getLocation();
+            getMsgs();
+        </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
