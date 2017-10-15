@@ -8,6 +8,12 @@ echo "hello world";
 	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
 	$username = $_SERVER['RDS_USERNAME'];
 	$password = $_SERVER['RDS_PASSWORD'];
+	echo $dbhost;
+	echo $dbport;
+	echo $dbname;
+	echo $charset;
+	echo $username;
+	echo $password;
 
 		try{
 			$pdo = new PDO($dsn, $username, $password);
