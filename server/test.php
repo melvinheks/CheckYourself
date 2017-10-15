@@ -1,11 +1,16 @@
 <?php
 echo "hello world";
-    $hostname = "ip-172-31-18-79";
-    $dbname = "nawars";
-    $uname = "chcmcmlyl";
-    $pword = "sqlwars123";
+	$dbhost = $_SERVER['RDS_HOSTNAME'];
+	$dbport = $_SERVER['RDS_PORT'];
+	$dbname = $_SERVER['RDS_DB_NAME'];
+	$charset = 'utf8' ;
+
+	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
+	$username = $_SERVER['RDS_USERNAME'];
+	$password = $_SERVER['RDS_PASSWORD'];
+
 		try{
-			$conn = new PDO("mysql:host=".$hostname.";dbname=".$dbname,$uname,$pword);
+			$pdo = new PDO($dsn, $username, $password);
 			die(json_encode(array('outcome' => true)));
         }catch(PDOException $ex){
             die(json_encode(array(
