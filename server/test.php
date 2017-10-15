@@ -1,13 +1,13 @@
 <?php
 echo "hello world";
-	$dbhost = 'nawars.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
-	$dbport = '3306';
-	$dbname = 'nawars';
+	$dbhost = 'db.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
+	$dbport = '3333';
+	$dbname = 'db';
 	$charset = 'utf8' ;
 
 	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
-	$username = "chcmcmlyl";
-	$password = "sqlwars123";
+	$username = 'chc5';
+	$password = 'plswork123';
 	echo $dbhost;
 	echo $dbport;
 	echo $dbname;
