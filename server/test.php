@@ -1,8 +1,8 @@
 <?php
 echo "hello world";
-	$dbhost = 'db.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
-	$dbport = '3333';
-	$dbname = 'db';
+	$dbhost = 'testdb.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
+	$dbport = '3306';
+	$dbname = 'testdb';
 	$charset = 'utf8' ;
 
 	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
