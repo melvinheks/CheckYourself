@@ -18,6 +18,28 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function get(){
+			$.ajax({
+				url: 'server/test.php',
+				type: 'POST',
+				enctype: 'multipart/form-data',
+				data: "hello",
+				cache: false,
+				processData: false, // Don't process the files
+				contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+				success: function (result)
+				{
+					console.log(result);
+				},
+				error: function (jqXHR, textStatus, errorThrown)
+				{
+					console.log('ERRORS: ' + textStatus);
+				}
+			});
+		}
+	</script>
   </head>
   <body>
  
@@ -27,15 +49,19 @@
             -->
         </div>
         <div class = "container" id="input">
-<div id = "title">
+		<div id = "title">
                 Neighborhood Chat
         </div>
             <input class = "form-control" type='text' name='msg' id ='input'/>
             <button class = "btn btn-lg btn-primary pull-right" id ='submitBtn' onclick='sendMsgs()'>Send</button>
         </div>
+		<div>
+			
+		</div>
         <script>
-            getLocation();
-            getMsgs();
+			get();
+            //getLocation();
+            //getMsgs();
         </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
