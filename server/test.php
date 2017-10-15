@@ -4,22 +4,15 @@ echo "hello world";
     $dbname = "nawars";
     $uname = "chcmcmlyl";
     $pword = "sqlwars123";
-
-    $conn = new PDO("mysql:host=".$hostname.";dbname=".$dbname,$uname,$pword);
-    $cmd ="CREATE TABLE MyGuests (
-                id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-                name VARCHAR(30) NOT NULL,
-                text VARCHAR(50) NOT NULL,
-                reg_date TIMESTAMP
-                )";
-
-    $statement =$conn -> prepare($cmd);
-    if($statement->execute()){
-        echo "it hella work";
-    }
-    else{
-        echo "did not work";
-    }
+		try{
+			$conn = new PDO("mysql:host=".$hostname.";dbname=".$dbname,$uname,$pword);
+			die(json_encode(array('outcome' => true)));
+        }catch(PDOException $ex){
+            die(json_encode(array(
+                'outcome' => false,
+                'message' => 'Unable to connect'
+            )));
+        }
 //$logginginfo = $statement-> fetchAll(PDO::FETCH_ASSOC);    
 //	$logname=$logginginfo[0]["Fname"]." ".$logginginfo[0]["Lname"];
 //				$rows = $statement -> rowCount();
