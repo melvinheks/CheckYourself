@@ -1,0 +1,997 @@
+var symp = {
+	"boredom":
+	[
+		"binge eating"
+	],
+	"papules":
+	[
+		"acne"
+	],
+	"nipple":
+	[
+		"breast cancer"
+	],
+	"can't see":
+	[
+		"acute leukaemia"
+	],
+	"runny nose":
+	[
+		"allergies",
+		"common cold",
+		"hay fever"
+	],
+	"pains":
+	[
+		"lactose intolerance"
+	],
+	"awake":
+	[
+		"epilepsy",
+		"insomnia"
+	],
+	"ear infection":
+	[
+		"earwax build-up"
+	],
+	"cannot sleep":
+	[
+		"insomnia"
+	],
+	"coughing":
+	[
+		"common cold",
+		"flu"
+	],
+	"flatulence":
+	[
+		"lactose intolerance"
+	],
+	"rumbling":
+	[
+		"lactose intolerance"
+	],
+	"dehydration":
+	[
+		"dehydration",
+		"dizzy",
+		"thirst"
+	],
+	"chemicals":
+	[
+		"allergies"
+	],
+	"shopping":
+	[
+		"attention deficit hyperactivity disorder (adhd)"
+	],
+	"tummy":
+	[
+		"acute pancreatitis"
+	],
+	"std":
+	[
+		"gonorrhea"
+	],
+	"losing muscle":
+	[
+		"type 1 diabetes",
+		"type 2 diabetes"
+	],
+	"milk":
+	[
+		"allergies"
+	],
+	"asthma":
+	[
+		""
+	],
+	"angry":
+	[
+		"binge eating"
+	],
+	"aches":
+	[
+		"acute leukaemia in children",
+		"flu"
+	],
+	"run down":
+	[
+		"acute leukaemia"
+	],
+	"earache":
+	[
+		"earwax build-up"
+	],
+	"hearing loss":
+	[
+		"earwax build-up"
+	],
+	"dry skin":
+	[
+		"rash"
+	],
+	"hurt":
+	[
+		"heart attack"
+	],
+	"wind":
+	[
+		"lactose intolerance"
+	],
+	"viral infection":
+	[
+		""
+	],
+	"seizure":
+	[
+		"brain tumour",
+		"epilepsy"
+	],
+	"pain in chest":
+	[
+		"a heart condition"
+	],
+	"throat":
+	[
+		"sore throat"
+	],
+	"yellow":
+	[
+		"acute cholecystitis"
+	],
+	"hot":
+	[
+		"acute cholecystitis"
+	],
+	"eyes":
+	[
+		"acute cholecystitis"
+	],
+	"vomit":
+	[
+		"food poisoning"
+	],
+	"bloated":
+	[
+		"indigestion",
+		"lactose intolerance"
+	],
+	"sleep":
+	[
+		"attention deficit hyperactivity disorder (adhd)",
+		"epilepsy",
+		"insomnia"
+	],
+	"red eye":
+	[
+		"allergies"
+	],
+	"itchy":
+	[
+		"type 2 diabetes",
+		"sore throat",
+		"rash"
+	],
+	"cysts":
+	[
+		"acne"
+	],
+	"penis":
+	[
+		"chlamydia"
+	],
+	"tooth":
+	[
+		"toothache"
+	],
+	"hand":
+	[
+		"atopic eczema"
+	],
+	"bumps":
+	[
+		"acne"
+	],
+	"sex":
+	[
+		"herpes",
+		"genital warts",
+		"gonorrhea",
+		"chlamydia"
+	],
+	"black bump":
+	[
+		"acne"
+	],
+	"itchy eye":
+	[
+		"allergies",
+		"hay fever"
+	],
+	"fainting":
+	[
+		"heart disease"
+	],
+	"neck":
+	[
+		"atopic eczema"
+	],
+	"eating":
+	[
+		"binge eating"
+	],
+	"regurgitating":
+	[
+		"indigestion"
+	],
+	"blisters":
+	[
+		"rash"
+	],
+	"food":
+	[
+		"allergies",
+		"indigestion"
+	],
+	"breathless":
+	[
+		"acute leukaemia",
+		"acute myeloid leukaemia",
+		"heart disease"
+	],
+	"hypothermia":
+	[
+		"alcohol poisoning"
+	],
+	"speech":
+	[
+		"alzheimer's disease",
+		"brain tumour"
+	],
+	"gum abscesses":
+	[
+		"gum disease"
+	],
+	"passing out":
+	[
+		"alcohol poisoning"
+	],
+	"slurred speech":
+	[
+		"alcohol poisoning"
+	],
+	"social occasions":
+	[
+		"attention deficit hyperactivity disorder (adhd)"
+	],
+	"belching":
+	[
+		"indigestion"
+	],
+	"hallucination":
+	[
+		"alzheimer's disease"
+	],
+	"urine":
+	[
+		"dehydration"
+	],
+	"chill":
+	[
+		"food poisoning",
+		"malaria",
+		"sunburn"
+	],
+	"bulge":
+	[
+		"acute cholecystitis"
+	],
+	"latex":
+	[
+		"allergies"
+	],
+	"coordination":
+	[
+		"alcohol poisoning"
+	],
+	"red":
+	[
+		"allergies",
+		"rash"
+	],
+	"white":
+	[
+		"acute cholecystitis"
+	],
+	"infections":
+	[
+		"acute leukaemia",
+		"acute myeloid leukaemia"
+	],
+	"seizures":
+	[
+		"brain tumour"
+	],
+	"faint":
+	[
+		"heart disease"
+	],
+	"tiredness":
+	[
+		"acute leukaemia",
+		"dehydration"
+	],
+	"chest":
+	[
+		"heart attack",
+		"a heart condition"
+	],
+	"pain in limbs":
+	[
+		"acute leukaemia in children"
+	],
+	"mole":
+	[
+		"skin cancer"
+	],
+	"nausea":
+	[
+		"acute cholecystitis",
+		"brain tumour",
+		"indigestion",
+		"migraine"
+	],
+	"dry mouth":
+	[
+		"dehydration"
+	],
+	"anxiety":
+	[
+		"alzheimer's disease",
+		"depression",
+		"dizzy"
+	],
+	"vision":
+	[
+		"brain tumour"
+	],
+	"ache":
+	[
+		"acute leukaemia in children",
+		"food poisoning",
+		"toothache"
+	],
+	"nuts":
+	[
+		"allergies"
+	],
+	"discomfort in chest":
+	[
+		"a heart condition"
+	],
+	"vertigo":
+	[
+		"earwax build-up"
+	],
+	"confusion":
+	[
+		"alcohol poisoning",
+		"alzheimer's disease"
+	],
+	"bored":
+	[
+		"binge eating"
+	],
+	"full":
+	[
+		"indigestion"
+	],
+	"occasion":
+	[
+		"attention deficit hyperactivity disorder (adhd)"
+	],
+	"drowsy":
+	[
+		"brain tumour",
+		"dehydration"
+	],
+	"blister":
+	[
+		"chickenpox",
+		"herpes",
+		"sunburn"
+	],
+	"yellowish bump":
+	[
+		"acne"
+	],
+	"nodules":
+	[
+		"acne"
+	],
+	"depress":
+	[
+		"binge eating"
+	],
+	"personality":
+	[
+		"alzheimer's disease"
+	],
+	"sneezing":
+	[
+		"allergies",
+		"common cold",
+		"hay fever"
+	],
+	"slow breath":
+	[
+		"alcohol poisoning"
+	],
+	"sore throat":
+	[
+		"common cold"
+	],
+	"light-headed":
+	[
+		"dizzy"
+	],
+	"blocked nose":
+	[
+		"common cold"
+	],
+	"lump":
+	[
+		"acne"
+	],
+	"headaches":
+	[
+		"acute leukaemia"
+	],
+	"pain":
+	[
+		"acute pancreatitis",
+		"atopic eczema",
+		"chickenpox",
+		"heart attack",
+		"flu",
+		"malaria",
+		"carpal tunnel syndrome"
+	],
+	"whitehead":
+	[
+		"acne"
+	],
+	"cheek":
+	[
+		"atopic eczema"
+	],
+	"palpitation":
+	[
+		"heart disease"
+	],
+	"mole is getting bigger":
+	[
+		"skin cancer"
+	],
+	"no tears":
+	[
+		"dehydration"
+	],
+	"loss of breath":
+	[
+		"acute leukaemia",
+		"acute myeloid leukaemia",
+		"heart disease"
+	],
+	"hopeless":
+	[
+		"depression"
+	],
+	"loss of appetite":
+	[
+		"acute cholecystitis",
+		"food poisoning"
+	],
+	"bleeding":
+	[
+		"acute leukaemia",
+		"acute leukaemia in children",
+		"acute myeloid leukaemia",
+		"canker sores"
+	],
+	"pale skin":
+	[
+		"acute myeloid leukaemia"
+	],
+	"gum diseases":
+	[
+		"canker sores"
+	],
+	"unwell":
+	[
+		"acute leukaemia"
+	],
+	"sick":
+	[
+		"acute pancreatitis",
+		"indigestion",
+		"lactose intolerance",
+		"sunburn",
+		"vertigo"
+	],
+	"anxious":
+	[
+		"alzheimer's disease",
+		"depression",
+		"dizzy"
+	],
+	"fatigue":
+	[
+		"heart disease"
+	],
+	"tinnitus":
+	[
+		"earwax build-up"
+	],
+	"bump":
+	[
+		"acne",
+		"canker sores"
+	],
+	"depressed":
+	[
+		"binge eating"
+	],
+	"lonely":
+	[
+		"binge eating"
+	],
+	"pale":
+	[
+		"acute leukaemia"
+	],
+	"feeling down":
+	[
+		"depression"
+	],
+	"vomiting":
+	[
+		"acute cholecystitis",
+		"alcohol poisoning",
+		"brain tumour",
+		"dizzy",
+		"food poisoning",
+		"malaria",
+		"thirst"
+	],
+	"eggs":
+	[
+		"allergies"
+	],
+	"blackheads":
+	[
+		"acne"
+	],
+	"shape":
+	[
+		"breast cancer"
+	],
+	"gums":
+	[
+		"gum disease"
+	],
+	"dust mites":
+	[
+		"allergies",
+		""
+	],
+	"dizzy":
+	[
+		"sunburn",
+		"vertigo"
+	],
+	"drowsiness":
+	[
+		"brain tumour"
+	],
+	"blackhead":
+	[
+		"acne"
+	],
+	"coma":
+	[
+		"alcohol poisoning"
+	],
+	"lumps":
+	[
+		"acne"
+	],
+	"unhappy":
+	[
+		"depression"
+	],
+	"light":
+	[
+		"migraine"
+	],
+	"pustules":
+	[
+		"acne"
+	],
+	"can't hear":
+	[
+		"earwax build-up"
+	],
+	"gum":
+	[
+		"gum disease",
+		"canker sores"
+	],
+	"swollen glands":
+	[
+		"acute leukaemia"
+	],
+	"infection":
+	[
+		"",
+		"malnutrition",
+		"rash"
+	],
+	"skin":
+	[
+		"acute cholecystitis",
+		"acute leukaemia"
+	],
+	"fever":
+	[
+		"acute cholecystitis",
+		"acute leukaemia",
+		"dizzy",
+		"flu",
+		"food poisoning",
+		"malaria",
+		"sunburn"
+	],
+	"stupor":
+	[
+		"alcohol poisoning"
+	],
+	"exercise":
+	[
+		""
+	],
+	"losing balance":
+	[
+		"vertigo"
+	],
+	"weak":
+	[
+		"brain tumour",
+		"flu",
+		"malnutrition"
+	],
+	"mole is painful":
+	[
+		"skin cancer"
+	],
+	"mole is itchy ":
+	[
+		"skin cancer"
+	],
+	"stomach cramps":
+	[
+		"food poisoning"
+	],
+	"stress":
+	[
+		"binge eating",
+		"depression",
+		"dizzy"
+	],
+	"watery eye":
+	[
+		"allergies"
+	],
+	"cigarette":
+	[
+		""
+	],
+	"change":
+	[
+		"breast cancer"
+	],
+	"tired":
+	[
+		"acute leukaemia",
+		"acute myeloid leukaemia",
+		"type 1 diabetes",
+		"type 2 diabetes",
+		"flu",
+		"insomnia",
+		"malnutrition"
+	],
+	"irregular breath":
+	[
+		"alcohol poisoning"
+	],
+	"elbows":
+	[
+		"atopic eczema"
+	],
+	"lack of confidence":
+	[
+		"binge eating"
+	],
+	"brain":
+	[
+		"concussion"
+	],
+	"disorder":
+	[
+		"binge eating"
+	],
+	"organized":
+	[
+		"attention deficit hyperactivity disorder (adhd)"
+	],
+	"animal fur":
+	[
+		""
+	],
+	"dehydrate":
+	[
+		"type 1 diabetes",
+		"type 2 diabetes"
+	],
+	"loss of teeth":
+	[
+		"gum disease"
+	],
+	"dairy":
+	[
+		"allergies"
+	],
+	"cramps":
+	[
+		"lactose intolerance"
+	],
+	"inflection":
+	[
+		"acute leukaemia"
+	],
+	"sound":
+	[
+		"migraine"
+	],
+	"stomach":
+	[
+		"acute pancreatitis",
+		"lactose intolerance"
+	],
+	"anger":
+	[
+		"binge eating"
+	],
+	"cough":
+	[
+		"common cold",
+		"flu"
+	],
+	"blurry":
+	[
+		"type 2 diabetes"
+	],
+	"confused":
+	[
+		"alcohol poisoning",
+		"alzheimer's disease"
+	],
+	"hit":
+	[
+		"concussion"
+	],
+	"low mood":
+	[
+		"malnutrition"
+	],
+	"can't sleep":
+	[
+		"insomnia"
+	],
+	"blow":
+	[
+		"concussion"
+	],
+	"vagina":
+	[
+		"chlamydia"
+	],
+	"weight loss":
+	[
+		"type 1 diabetes",
+		"type 2 diabetes"
+	],
+	"ill":
+	[
+		"malnutrition"
+	],
+	"sunk":
+	[
+		"breast cancer"
+	],
+	"dry":
+	[
+		"dehydration"
+	],
+	"diarrhea":
+	[
+		"acute pancreatitis",
+		"dizzy",
+		"food poisoning",
+		"lactose intolerance",
+		"malaria",
+		"thirst"
+	],
+	"breasts":
+	[
+		"breast cancer"
+	],
+	"loose teeth":
+	[
+		"gum disease"
+	],
+	"numb":
+	[
+		"carpal tunnel syndrome"
+	],
+	"bruises":
+	[
+		"acute leukaemia in children",
+		"acute leukaemia"
+	],
+	"thirsty":
+	[
+		"type 1 diabetes",
+		"type 2 diabetes"
+	],
+	"loss of balance":
+	[
+		"vertigo"
+	],
+	"pollen":
+	[
+		"allergies",
+		""
+	],
+	"abdomen":
+	[
+		"acute cholecystitis",
+		"acute pancreatitis"
+	],
+	"fruit":
+	[
+		"allergies"
+	],
+	"mole is changing shape":
+	[
+		"skin cancer"
+	],
+	"can't talk right":
+	[
+		"alcohol poisoning"
+	],
+	"head":
+	[
+		"concussion"
+	],
+	"burning sensation":
+	[
+		"gonorrhea"
+	],
+	"scalp":
+	[
+		"atopic eczema"
+	],
+	"sad":
+	[
+		"depression"
+	],
+	"muscle":
+	[
+		"malaria"
+	],
+	"low self-esteem":
+	[
+		"binge eating"
+	],
+	"hear":
+	[
+		"earwax build-up"
+	],
+	"unconscious":
+	[
+		"alcohol poisoning"
+	],
+	"middle of the night":
+	[
+		"insomnia"
+	],
+	"smoke":
+	[
+		""
+	],
+	"jaundice":
+	[
+		"acute cholecystitis"
+	],
+	"medication":
+	[
+		"allergies"
+	],
+	"on time":
+	[
+		"attention deficit hyperactivity disorder (adhd)"
+	],
+	"shellfish":
+	[
+		"allergies"
+	],
+	"paresthesia":
+	[
+		"carpal tunnel syndrome"
+	],
+	"chest pain":
+	[
+		"heart attack",
+		"heart disease"
+	],
+	"swollen":
+	[
+		"acute leukaemia in children"
+	],
+	"waking":
+	[
+		"epilepsy"
+	],
+	"attention":
+	[
+		"attention deficit hyperactivity disorder (adhd)"
+	],
+	"appetite":
+	[
+		"acute cholecystitis"
+	],
+	"depression":
+	[
+		"binge eating"
+	],
+	"headache":
+	[
+		"brain tumour",
+		"flu",
+		"malaria",
+		"sunburn",
+		"migraine",
+		"concussion",
+		"concussion"
+	],
+	"sweating":
+	[
+		"acute cholecystitis",
+		"acute leukaemia",
+		"malaria"
+	],
+	"breast":
+	[
+		"breast cancer"
+	],
+	"backs":
+	[
+		"atopic eczema"
+	],
+	"mould":
+	[
+		"allergies"
+	]
+}
