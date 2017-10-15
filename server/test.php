@@ -1,13 +1,13 @@
 <?php
 echo "hello world";
-	$dbhost = $_SERVER['RDS_HOSTNAME'];
-	$dbport = $_SERVER['RDS_PORT'];
-	$dbname = $_SERVER['RDS_DB_NAME'];
+	$dbhost = 'nawars.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
+	$dbport = '3306';
+	$dbname = 'nawars';
 	$charset = 'utf8' ;
 
 	$dsn = "mysql:host={$dbhost};port={$dbport};dbname={$dbname};charset={$charset}";
-	$username = $_SERVER['RDS_USERNAME'];
-	$password = $_SERVER['RDS_PASSWORD'];
+	$username = "chcmcmlyl";
+	$password = "sqlwars123";
 	echo $dbhost;
 	echo $dbport;
 	echo $dbname;
