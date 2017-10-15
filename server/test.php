@@ -1,6 +1,6 @@
 <?php
 echo "hello world";
-	$dbhost = 'nawars.ceuifsfuijjn.us-east-1.rds.amazonaws.com';
+	$dbhost = 'ip-172-31-18-79';
 	$dbport = '3306';
 	$dbname = 'nawars';
 	$charset = 'utf8' ;
